@@ -68,15 +68,15 @@ tailwind.config = {
 <!-- ====== NAV STICKY ====== -->
 <nav class="sticky top-0 z-50 bg-te-ink/90 backdrop-blur-md text-te-cream shadow-lg border-b border-te-copper/40">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <span class="font-serif font-semibold tracking-tight text-lg">RISKMATHICS <span class="text-te-amber">|</span> TRADING ECONOMY</span>
-      <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
-        <a href="#singularidad" class="hover:text-te-amber transition">El Programa</a>
-        <a href="#contexto" class="hover:text-te-amber transition">Por qué ahora</a>
-        <a href="#curriculum" class="hover:text-te-amber transition">Currículum</a>
-        <a href="#capstone" class="hover:text-te-amber transition">Capstone</a>
+    <div class="flex justify-between items-center h-16 gap-4">
+      <span class="font-serif font-semibold tracking-tight text-lg whitespace-nowrap truncate min-w-0">RISKMATHICS<span class="hidden sm:inline"> <span class="text-te-amber">|</span> TRADING ECONOMY</span></span>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium whitespace-nowrap">
+        <a href="#singularidad" class="hover:text-te-amber transition whitespace-nowrap">El Programa</a>
+        <a href="#contexto" class="hover:text-te-amber transition whitespace-nowrap">Por qué ahora</a>
+        <a href="#curriculum" class="hover:text-te-amber transition whitespace-nowrap">Currículum</a>
+        <a href="#capstone" class="hover:text-te-amber transition whitespace-nowrap">Capstone</a>
       </div>
-      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white text-sm font-bold px-5 py-2 rounded-full hover:opacity-90 transition shadow-md">Inscríbete</a>
+      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white text-sm font-bold rounded-full hover:opacity-90 transition shadow-md whitespace-nowrap shrink-0 inline-flex items-center" style="padding:10px 22px;">Inscríbete</a>
     </div>
   </div>
 </nav>
@@ -87,8 +87,9 @@ tailwind.config = {
   <div class="absolute left-0 right-0 bottom-0 hair"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative z-10">
     <p class="text-te-amber font-bold tracking-[0.25em] text-xs sm:text-sm mb-5 uppercase">RiskMathics Financial Institute · Edición Ejecutiva No. 01 · México — Global</p>
-    <h1 class="font-serif font-semibold leading-[1.02] text-5xl md:text-7xl mb-4 max-w-4xl">Trading Economy</h1>
-    <p class="font-serif text-2xl md:text-3xl text-te-honey mb-6 max-w-3xl leading-snug">A Breaking Point for Economists, Traders &amp; Asset Managers</p>
+    <h1 class="font-serif font-bold leading-[1.05] text-5xl md:text-7xl mb-4 max-w-4xl uppercase tracking-[0.05em]">Trading Economy</h1>
+    <div class="mb-5" style="width:50px;height:2px;background:#d08a4a;"></div>
+    <p class="font-body italic text-2xl md:text-3xl text-te-honey mb-6 max-w-3xl leading-snug">A Breaking Point for Economists, Traders &amp; Asset Managers</p>
     <p class="text-lg md:text-xl text-te-sand max-w-3xl font-light leading-relaxed mb-3">
       <em class="text-te-cream not-italic font-medium">Theory ends. The arena begins.</em>
       El primer puente riguroso y operativo entre el análisis macroeconómico y la decisión de inversión.
@@ -101,8 +102,8 @@ tailwind.config = {
     </div>
 
     <div class="flex flex-wrap gap-4 mb-12">
-      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-xl hover:-translate-y-0.5 hover:shadow-2xl transition text-base">Quiero el temario</a>
-      <a href="#rm-enroll" class="border border-te-cream/40 text-te-cream font-semibold px-8 py-4 rounded-full hover:bg-te-cream/10 transition text-base">Inscribirme ahora</a>
+      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-xl hover:-translate-y-0.5 hover:shadow-2xl transition text-base whitespace-nowrap inline-flex items-center justify-center">Quiero el temario</a>
+      <a href="#rm-enroll" class="border border-te-cream/40 text-te-cream font-semibold px-8 py-4 rounded-full hover:bg-te-cream/10 transition text-base whitespace-nowrap inline-flex items-center justify-center">Inscribirme ahora</a>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-te-cream/15 pt-8">
@@ -528,7 +529,7 @@ tailwind.config = {
         <p class="font-serif text-2xl text-te-ink font-semibold leading-snug">La arena abre el <span class="text-te-copper">10 de agosto de 2026</span>. Los cupos son limitados.</p>
         <p class="text-sm text-te-bronze mt-1">Edición Ejecutiva No. 01 · Grupos reducidos con peer review y panel evaluador — el formato no admite sobrecupo.</p>
       </div>
-      <a href="#rm-enroll" class="shrink-0 bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-lg hover:-translate-y-0.5 transition">Asegurar mi lugar</a>
+      <a href="#rm-enroll" class="shrink-0 bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-lg hover:-translate-y-0.5 transition whitespace-nowrap inline-flex items-center">Asegurar mi lugar</a>
     </div>
   </section>
 
@@ -538,9 +539,10 @@ tailwind.config = {
 <section id="rm-enroll" style="background:linear-gradient(135deg,#3a2e1c,#140d06);color:#f6efe1;padding:64px 20px;font-family:'Lora',Georgia,serif;">
   <div style="max-width:660px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
-      <div style="color:#d08a4a;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
-      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Poppins',sans-serif;">Asegura tu lugar</h2>
-      <p style="color:#cbbea2;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
+      <div style="font-family:'Poppins',sans-serif;color:#d08a4a;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:32px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:.06em;">Asegura tu lugar</h2>
+      <div style="width:50px;height:2px;background:#d08a4a;margin:0 auto 12px;"></div>
+      <p style="font-family:'Lora',Georgia,serif;font-style:italic;color:#cbbea2;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
     </div>
     <div style="background:#fff;color:#241b10;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.35);">
       <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:12px;">
@@ -560,8 +562,8 @@ tailwind.config = {
       <div id="rm-verify" style="display:none;"></div>
       <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
       <div style="margin-top:24px;padding-top:22px;border-top:1px solid #f0e8d5;text-align:center;">
-        <div style="font-size:13px;color:#7d6e54;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:800;color:#241b10;margin:8px 0 4px;">MXN $<span>98,000</span> <span style="font-size:14px;color:#7d6e54;font-weight:500;">+ IVA</span></div>
+        <div style="font-family:'Poppins',sans-serif;font-size:13px;color:#7d6e54;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
+        <div style="font-family:'Poppins',sans-serif;font-size:30px;font-weight:800;color:#241b10;margin:8px 0 4px;">MXN $<span>98,000</span> <span style="font-size:14px;color:#7d6e54;font-weight:500;">+ IVA</span></div>
         <div style="display:grid;gap:10px;margin-top:16px;">
           <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#d08a4a;color:#241b10;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
           <a id="rm-stripe" href="https://buy.stripe.com/5kQdR1cDJbP25stenv2Ry1g" target="_blank" rel="noopener" style="background:#241b10;color:#f6efe1;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
