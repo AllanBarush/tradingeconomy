@@ -1,188 +1,652 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Trading Economy: A Breaking Point for Economists, Traders & Asset Managers | RiskMathics</title>
-<meta name="description" content="El programa que rompe el muro entre la macroeconomía y el trading. Convierte el ciclo económico, la política monetaria y los datos macro en posiciones accionables. 120 horas · 8 módulos · Modalidad Virtual LIVE. Inicio Septiembre 2026.">
-<style>
- :root{
-   --ink:#0a1424;--ink2:#5a6577;--line:#e8ebf0;--bg:#ffffff;--soft:#f6f8fb;
-   --navy:#0a1f3c;--navy2:#12305c;--gold:#c8a04a;--gold2:#e3c578;
- }
- *{box-sizing:border-box;margin:0;padding:0}
- html{scroll-behavior:smooth}
- body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Inter','Segoe UI',Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.55;letter-spacing:-.01em}
- .container{max-width:1080px;margin:0 auto;padding:0 28px}
- a{color:inherit;text-decoration:none}
- .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(14px);background:rgba(255,255,255,.78);border-bottom:1px solid var(--line)}
- .nav .container{display:flex;align-items:center;justify-content:space-between;height:60px}
- .brand{font-size:13px;font-weight:700;letter-spacing:.18em;color:var(--navy)}
- .nav a.cta{font-size:13px;font-weight:600;color:#fff;background:var(--navy);padding:9px 18px;border-radius:100px;transition:.25s}
- .nav a.cta:hover{background:var(--navy2);transform:translateY(-1px)}
- .hero{background:linear-gradient(155deg,#12305c 0%,#0a1f3c 45%,#070f1d 100%);color:#fff;position:relative;overflow:hidden}
- .hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.65}
- .hero .container{padding-top:92px;padding-bottom:96px;position:relative}
- .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.22em;color:var(--gold2);font-weight:600;text-transform:uppercase}
- .eyebrow:before{content:"";width:26px;height:1px;background:var(--gold)}
- h1{font-size:60px;line-height:1.02;font-weight:600;letter-spacing:-.03em;margin:22px 0 0;max-width:14ch}
- .hero p.dek{font-size:20px;color:#c2cee0;font-weight:400;margin-top:22px;max-width:46ch;line-height:1.5}
- .hero .meta{margin-top:34px;display:flex;gap:30px;flex-wrap:wrap;font-size:14px;color:#9fb1cc}
- .hero .meta b{color:#fff;font-weight:600}
- .hero .actions{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap}
- .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600;padding:15px 30px;border-radius:100px;cursor:pointer;border:none;transition:.25s;letter-spacing:-.01em}
- .btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1404;box-shadow:0 8px 30px rgba(200,160,74,.32)}
- .btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(200,160,74,.42)}
- .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
- .btn-ghost:hover{background:rgba(255,255,255,.14)}
- .btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{background:var(--navy2);transform:translateY(-2px)}
- .stats{border-bottom:1px solid var(--line);background:var(--soft)}
- .stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:38px 28px}
- .stat .n{font-size:38px;font-weight:600;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
- .stat .l{font-size:13px;color:var(--ink2);margin-top:4px}
- section.block{padding:88px 0;border-bottom:1px solid var(--line)}
- .lab{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
- h2{font-size:34px;font-weight:600;letter-spacing:-.025em;margin:14px 0 0;max-width:20ch}
- .intro{font-size:18px;color:#3b4556;max-width:62ch;margin-top:22px;line-height:1.65}
- .mods{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
- .mod{border:1px solid var(--line);border-radius:16px;padding:22px 24px;background:#fff;transition:.3s;display:flex;gap:14px;align-items:flex-start}
- .mod:hover{border-color:#cdd6e4;box-shadow:0 14px 40px rgba(10,31,60,.08);transform:translateY(-3px)}
- .mod .dot{flex:none;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#eef3fb,#dde7f6);display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700;font-size:14px}
- .mod p{font-size:14.5px;color:#2c3950;line-height:1.5}
- .mod p b{color:var(--ink)}
- .split{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:start}
- .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 30px 70px rgba(10,31,60,.07)}
- form{display:grid;gap:14px}
- .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
- label{font-size:12.5px;font-weight:600;color:#46526a;display:block;margin-bottom:6px;letter-spacing:.01em}
- input{width:100%;padding:13px 15px;border:1px solid #d8dee9;border-radius:12px;font-size:15px;font-family:inherit;transition:.2s;background:#fcfdff}
- input:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(18,48,92,.08);background:#fff}
- .note{font-size:12px;color:#8a94a6;margin-top:6px}
- .ok{background:linear-gradient(135deg,#f0fff7,#e7faf0);border:1px solid #b6ebcf;color:#0c6b3f;padding:22px;border-radius:18px;font-size:15px;line-height:1.5}
- .hidden{display:none}
- .pricewrap{display:flex;align-items:baseline;gap:10px;margin:6px 0 18px}
- .price{font-size:42px;font-weight:600;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
- .price small{font-size:15px;color:var(--ink2);font-weight:500}
- .feat-min{list-style:none;margin:18px 0;display:grid;gap:10px}
- .feat-min li{font-size:14.5px;color:#3b4556;padding-left:26px;position:relative}
- .feat-min li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
- .pay{display:grid;gap:12px;margin-top:22px}
- .trust{font-size:12px;color:#9aa4b4;margin-top:14px;text-align:center}
- footer{background:var(--navy);color:#9fb1cc;padding:48px 0}
- footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
- footer a{color:#cdd9ec;border-bottom:1px solid transparent;transition:.2s}footer a:hover{border-color:#cdd9ec}
- .reveal{opacity:0;transform:translateY(18px);transition:.7s cubic-bezier(.2,.7,.2,1)}
- .reveal.in{opacity:1;transform:none}
- @media(max-width:860px){h1{font-size:40px}.stats .container{grid-template-columns:1fr 1fr}.mods,.split,.frow{grid-template-columns:1fr}.hero .container{padding-top:64px;padding-bottom:68px}section.block{padding:60px 0}}
-</style></head>
-<body>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Economy 2026 | Chief Economist &amp; Market Intelligence Program — RiskMathics Financial Institute</title>
+<meta name="description" content="Trading Economy: A Breaking Point for Economists, Traders & Asset Managers. El primer puente riguroso y operativo entre el análisis macroeconómico y la decisión de inversión. 180 horas · 72 sesiones · 13 módulos. Inicio 10 de agosto de 2026. RiskMathics Financial Institute.">
 
-<div class="nav"><div class="container">
-  <div class="brand">RISKMATHICS</div>
-  <a class="cta" href="#inscripcion">Inscríbete</a>
-</div></div>
-
-<header class="hero"><div class="container">
-  <span class="eyebrow">Executive Program · Macro Trading Mastery</span>
-  <h1>Trading Economy</h1>
-  <p class="dek">A Breaking Point for Economists, Traders &amp; Asset Managers. El programa que <b style="color:#fff">traduce la macroeconomía y la política monetaria en posiciones accionables</b> en tasas, FX, crédito y equity.</p>
-  <div class="meta"><span><b>Inicio</b> · Septiembre 2026</span><span><b>120</b> horas</span><span><b>8</b> módulos</span><span><b>Modalidad</b> · Virtual LIVE</span></div>
-  <div class="actions">
-    <a class="btn btn-gold" href="#inscripcion">Recibir el temario</a>
-    <a class="btn btn-ghost" href="#programa">Ver el programa</a>
-  </div>
-</div></header>
-
-<div class="stats"><div class="container">
-  <div class="stat"><div class="n">120</div><div class="l">horas de formación</div></div>
-  <div class="stat"><div class="n">8</div><div class="l">módulos integrados</div></div>
-  <div class="stat"><div class="n">4</div><div class="l">clases de activos cubiertas</div></div>
-  <div class="stat"><div class="n">100%</div><div class="l">aplicado en Python &amp; mercado real</div></div>
-</div></div>
-
-<section class="block" id="programa"><div class="container reveal">
-  <div class="lab">El programa</div>
-  <h2>Saber economía no es saber operar. Aquí se cierra esa brecha.</h2>
-  <p class="intro">La mayoría de los economistas leen el ciclo pero no saben tomar la posición; la mayoría de los traders toman la posición pero no leen el ciclo. <b>Trading Economy</b> es el punto de quiebre: conecta la <b>macroeconomía, la política monetaria de la Fed/Banxico/ECB y los datos económicos</b> con la ejecución real en mercados de <b>tasas, divisas, crédito y renta variable</b>. Cada módulo termina en un <b>trade thesis accionable</b> —del dato macro a la estructura, el sizing y la gestión de riesgo— para economistas, traders y asset managers que necesitan convertir su visión en P&amp;L.</p>
-  <div class="mods">
-    <div class="mod"><div class="dot">01</div><p><b>El Ciclo Económico como Motor de Mercados</b> — fases del ciclo, regímenes de crecimiento/inflación y rotación de activos (growth, value, duration, commodities).</p></div>
-    <div class="mod"><div class="dot">02</div><p><b>Política Monetaria &amp; Curva de Tasas</b> — reacción de la Fed/Banxico/ECB, lectura del dot plot, pricing de la curva, steepeners/flatteners y trades de duración.</p></div>
-    <div class="mod"><div class="dot">03</div><p><b>Datos Macro Accionables &amp; Nowcasting</b> — CPI, NFP, PMIs, PCE: cómo leer la sorpresa vs. expectativa, el surprise index y el posicionamiento del consenso.</p></div>
-    <div class="mod"><div class="dot">04</div><p><b>FX &amp; Global Macro</b> — paridad de tasas, carry trade, dólar/peso, diferenciales de política monetaria y flujos de capital transfronterizos.</p></div>
-    <div class="mod"><div class="dot">05</div><p><b>Inflación, Tasas Reales &amp; Breakevens</b> — TIPS/UDIBONOS, breakeven inflation, tasas reales y su impacto sobre valuación de activos de riesgo.</p></div>
-    <div class="mod"><div class="dot">06</div><p><b>Crédito, Spreads &amp; Riesgo Sistémico</b> — diferenciales de crédito como termómetro del ciclo, condiciones financieras y señales de estrés (HY, IG, CDS).</p></div>
-    <div class="mod"><div class="dot">07</div><p><b>Equity Macro &amp; Asset Allocation Táctica</b> — del régimen macro a la asignación sectorial, factores, beta al ciclo y construcción del portafolio top-down.</p></div>
-    <div class="mod"><div class="dot">08</div><p><b>Trade Thesis &amp; Risk Management</b> — del escenario macro a la posición: estructura, sizing, stops, escenarios y backtesting en Python.</p></div>
-  </div>
-</div></section>
-
-<section class="block" id="inscripcion"><div class="container reveal">
-  <div class="split">
-    <div>
-      <div class="lab">Inscripción</div>
-      <h2>Déjanos tus datos y recibe el temario completo</h2>
-      <p class="intro">Te enviamos el temario detallado y las opciones de inscripción. Sin compromiso — un asesor te contacta.</p>
-      <form id="lead" onsubmit="return submitLead(event)">
-        <div class="frow">
-          <div><label>Nombre</label><input name="nombre" required></div>
-          <div><label>Apellido</label><input name="apellido"></div>
-        </div>
-        <div><label>Email corporativo</label><input type="email" name="email" required></div>
-        <div class="frow">
-          <div><label>Puesto</label><input name="puesto"></div>
-          <div><label>Institución</label><input name="empresa"></div>
-        </div>
-        <div><label>WhatsApp</label><input name="whatsapp" placeholder="+52..."></div>
-        <button class="btn btn-gold" type="submit" style="width:100%;margin-top:4px">Quiero el temario</button>
-        <p class="note">🔒 Tus datos están seguros. Te contactamos solo sobre este programa.</p>
-      </form>
-      <div id="verifybox" class="hidden" style="margin-top:18px"></div>
-  <div id="thanks" class="ok hidden">✅ <b>¡Listo!</b> Recibimos tus datos. Te enviamos el temario y un asesor te contactará. Abajo puedes asegurar tu lugar.</div>
-    </div>
-    <div class="card">
-      <div class="lab">Asegura tu lugar</div>
-      <div class="pricewrap"><span class="price">MXN $<span id="precio">—</span></span><small>+ IVA</small></div>
-      <ul class="feat-min">
-        <li>Acceso completo · 120 horas · 8 módulos</li>
-        <li>4 clases de activos: tasas, FX, crédito y equity</li>
-        <li>Certificado RiskMathics + portafolio de trade theses</li>
-        <li>6 meses sin intereses (PayPal) · Factura CFDI</li>
-      </ul>
-      <div class="pay">
-        <a class="btn btn-gold" id="paypal" href="#" target="_blank" rel="noopener">Pagar con PayPal · 6 MSI</a>
-        <a class="btn btn-dark" id="stripe" href="#" target="_blank" rel="noopener">Pagar con tarjeta · Stripe</a>
-      </div>
-      <p class="trust">100% seguro · SSL · PayPal Verified</p>
-    </div>
-  </div>
-</div></section>
-
-<footer><div class="container">
-  <div>RiskMathics Financial Institute · Learn. Apply. Profit.<br>Ciudad de México</div>
-  <div><a href="https://riskmathics.com">riskmathics.com</a></div>
-</div></footer>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Google Fonts: editorial serif display + neutral sans (identidad del folleto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script>
-const COURSE = { id:"trading-economy", nombre:"Trading Economy: A Breaking Point for Economists, Traders & Asset Managers",
-  precio:"98,000", paypal:"", stripe:"https://buy.stripe.com/5kQdR1cDJbP25stenv2Ry1g",
-  folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/trading-economy-2026.pdf" };
-const SB_URL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/lead-distributor",SB_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
-document.getElementById('precio').textContent=COURSE.precio||"—";
-if(COURSE.stripe)document.getElementById('stripe').href=COURSE.stripe;
-if(COURSE.paypal)document.getElementById('paypal').href=COURSE.paypal;else{var _p=document.getElementById('paypal');if(_p)_p.style.display='none';}
-async function submitLead(e){e.preventDefault();const f=e.target,data=Object.fromEntries(new FormData(f));data.curso=COURSE.id;
- try{if(SB_URL)await fetch(SB_URL,{method:'POST',headers:{'Content-Type':'application/json','apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY},body:JSON.stringify(data)});}catch(err){}
- f.classList.add('hidden');document.getElementById('thanks').classList.remove('hidden');
- if(COURSE.folleto)window.open(COURSE.folleto,'_blank');return false;}
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-/* === Verificación Twilio Verify (SMS) === */
-const VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
-const VKEY=SB_KEY;
-let LEAD=null;
-async function vpost(p){const r=await fetch(VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":VKEY,"Authorization":"Bearer "+VKEY},body:JSON.stringify(p)});return r.json();}
-async function submitLead(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp/telefono con lada (ej. +52...) para verificarte.");return false;}d.phone=phone;d.curso=COURSE.id;d.folleto=COURSE.folleto;LEAD=d;const b=f.querySelector('button[type=submit]');const t0=b.textContent;b.textContent="Enviando codigo...";b.disabled=true;let res;try{res=await vpost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.classList.add('hidden');showCode(phone);}else{b.textContent=t0;b.disabled=false;alert("No pudimos enviar el codigo. Revisa tu numero (con lada, ej +52).");}return false;}
-function showCode(phone){const c=document.getElementById('verifybox');c.innerHTML='<p style="margin-bottom:12px;font-size:15px">📲 Te enviamos un codigo por SMS a <b>'+phone+'</b>. Ingresalo para recibir tu temario:</p><input id="otp" inputmode="numeric" autocomplete="one-time-code" placeholder="Codigo de 6 digitos" style="width:100%;padding:13px 15px;border:1px solid #d8dee9;border-radius:12px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;font-family:inherit"><button class="btn btn-gold" type="button" style="width:100%" onclick="verifyCode()">Verificar y recibir temario</button><p id="vmsg" class="note"></p>';c.classList.remove('hidden');document.getElementById('otp').focus();}
-async function verifyCode(){const code=(document.getElementById('otp').value||"").trim();const m=document.getElementById('vmsg');if(code.length<4){m.textContent="Escribe el codigo completo.";return;}m.textContent="Verificando...";let res;try{res=await vpost({action:"check",phone:LEAD.phone,code:code,email:LEAD.email,nombre:LEAD.nombre,apellido:LEAD.apellido,puesto:LEAD.puesto,empresa:LEAD.empresa,curso:COURSE.id,folleto:COURSE.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('verifybox').classList.add('hidden');document.getElementById('thanks').classList.remove('hidden');if(COURSE.folleto)window.open(COURSE.folleto,'_blank');}else{m.textContent="Codigo incorrecto o expirado. Intenta de nuevo.";}}
-
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        te: {
+          ink:    '#140d06',
+          coffee: '#241b10',
+          umber:  '#3a2e1c',
+          bronze: '#7d6e54',
+          sand:   '#cbbea2',
+          tan:    '#a88e6c',
+          cream:  '#f6efe1',
+          paper:  '#fbf4e6',
+          copper: '#a8501f',
+          amber:  '#d08a4a',
+          honey:  '#e7c9a0'
+        }
+      },
+      fontFamily: {
+        sans:  ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Fraunces', 'Georgia', 'serif']
+      }
+    }
+  }
+}
 </script>
-</body></html>
+
+<style>
+  body{background-color:#fbf4e6;color:#241b10;-webkit-font-smoothing:antialiased;}
+  html{scroll-behavior:smooth;}
+  .chart-container{position:relative;width:100%;max-width:1000px;margin-left:auto;margin-right:auto;height:44vh;max-height:480px;min-height:300px;background:#fff;border:1px solid #e8dcc4;border-radius:.75rem;padding:1rem;box-shadow:0 10px 30px rgba(36,27,16,.07);}
+  @media (max-width:768px){.chart-container{height:36vh;}}
+  ::-webkit-scrollbar{width:6px;}
+  ::-webkit-scrollbar-track{background:#f6efe1;}
+  ::-webkit-scrollbar-thumb{background:#a8501f;border-radius:10px;}
+  details.mod summary{cursor:pointer;list-style:none;}
+  details.mod summary::-webkit-details-marker{display:none;}
+  details.mod summary .plus{transition:transform .3s ease;}
+  details.mod[open] summary .plus{transform:rotate(45deg);}
+  details.mod > div{animation:modIn .35s ease;}
+  @keyframes modIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+  .hair{background:linear-gradient(90deg,transparent,#a8501f,transparent);height:1px;opacity:.55;}
+</style>
+</head>
+<body class="font-sans">
+
+<!-- ====== NAV STICKY ====== -->
+<nav class="sticky top-0 z-50 bg-te-ink/90 backdrop-blur-md text-te-cream shadow-lg border-b border-te-copper/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <span class="font-serif font-semibold tracking-tight text-lg">RISKMATHICS <span class="text-te-amber">|</span> TRADING ECONOMY</span>
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
+        <a href="#singularidad" class="hover:text-te-amber transition">El Programa</a>
+        <a href="#contexto" class="hover:text-te-amber transition">Por qué ahora</a>
+        <a href="#curriculum" class="hover:text-te-amber transition">Currículum</a>
+        <a href="#capstone" class="hover:text-te-amber transition">Capstone</a>
+      </div>
+      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white text-sm font-bold px-5 py-2 rounded-full hover:opacity-90 transition shadow-md">Inscríbete</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<header class="relative overflow-hidden text-te-cream" style="background:linear-gradient(150deg,#3a2e1c 0%,#241b10 42%,#140d06 100%);">
+  <div class="absolute inset-0 opacity-[0.07] pointer-events-none" style="background:radial-gradient(ellipse at 75% 15%, #e7c9a0 0%, transparent 55%);"></div>
+  <div class="absolute left-0 right-0 bottom-0 hair"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative z-10">
+    <p class="text-te-amber font-bold tracking-[0.25em] text-xs sm:text-sm mb-5 uppercase">RiskMathics Financial Institute · Edición Ejecutiva No. 01 · México — Global</p>
+    <h1 class="font-serif font-semibold leading-[1.02] text-5xl md:text-7xl mb-4 max-w-4xl">Trading Economy</h1>
+    <p class="font-serif text-2xl md:text-3xl text-te-honey mb-6 max-w-3xl leading-snug">A Breaking Point for Economists, Traders &amp; Asset Managers</p>
+    <p class="text-lg md:text-xl text-te-sand max-w-3xl font-light leading-relaxed mb-3">
+      <em class="text-te-cream not-italic font-medium">Theory ends. The arena begins.</em>
+      El primer puente riguroso y operativo entre el análisis macroeconómico y la decisión de inversión.
+    </p>
+    <p class="text-sm text-te-tan tracking-widest uppercase mb-10">Chief Economist &amp; Market Intelligence Program · From Analysis to Execution</p>
+
+    <div class="flex flex-wrap items-center gap-3 mb-10">
+      <span class="inline-flex items-center gap-2 bg-te-copper/20 border border-te-copper/50 text-te-honey text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Curso online · En vivo · 7:00–9:00 p.m. CDMX</span>
+      <span class="inline-flex items-center gap-2 bg-te-cream/10 border border-te-cream/25 text-te-cream text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Inicio · 10 de agosto de 2026</span>
+    </div>
+
+    <div class="flex flex-wrap gap-4 mb-12">
+      <a href="#rm-enroll" class="bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-xl hover:-translate-y-0.5 hover:shadow-2xl transition text-base">Quiero el temario</a>
+      <a href="#rm-enroll" class="border border-te-cream/40 text-te-cream font-semibold px-8 py-4 rounded-full hover:bg-te-cream/10 transition text-base">Inscribirme ahora</a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-te-cream/15 pt-8">
+      <div><p class="text-3xl md:text-4xl font-serif font-semibold text-te-amber">180</p><p class="text-xs text-te-sand uppercase tracking-wider mt-1">Horas de programa</p></div>
+      <div><p class="text-3xl md:text-4xl font-serif font-semibold text-te-amber">72</p><p class="text-xs text-te-sand uppercase tracking-wider mt-1">Sesiones en vivo · 2.5 h c/u</p></div>
+      <div><p class="text-3xl md:text-4xl font-serif font-semibold text-te-amber">13</p><p class="text-xs text-te-sand uppercase tracking-wider mt-1">Módulos temáticos</p></div>
+      <div><p class="text-3xl md:text-4xl font-serif font-semibold text-te-amber">$50,000&nbsp;M</p><p class="text-xs text-te-sand uppercase tracking-wider mt-1">AUM en la simulación Capstone</p></div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+  <!-- ====== EXECUTIVE SUMMARY / LA SINGULARIDAD ====== -->
+  <section id="singularidad" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">La Singularidad del Programa</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-6 border-l-4 border-te-copper pl-4 leading-tight">No enseña economía. No enseña trading. Enseña la intersección.</h3>
+    <div class="bg-white p-8 md:p-10 rounded-xl shadow-sm border border-te-sand/60 text-te-umber space-y-6 leading-relaxed">
+      <p>Durante décadas, el mundo de la economía y el mundo de los mercados financieros han coexistido en un extraño divorcio intelectual. Por un lado, los economistas dominan la teoría, los modelos y el diagnóstico macroeconómico; pero raramente operan un portafolio: no han tenido la &ldquo;Vol&rdquo; ni el libro de Delta-1 en el estómago. Por otro, los traders, fund managers, quants e inversionistas independientes dominan la ejecución, el timing y la administración de riesgos, pero frecuentemente subestiman los fundamentos que mueven los mercados.</p>
+      <p>Este programa nace de una convicción contraria: que la mayor asimetría de valor en el mercado financiero global no está en añadir más cursos de mercados, inversiones, derivados o más econometría, sino en crear por primera vez <b class="text-te-ink">un puente riguroso y operativo entre el análisis macroeconómico y la toma de decisiones de inversión</b>.</p>
+      <p>Un Chief Economist aporta análisis que sin duda puede ser brillante; pero su influencia sobre el portafolio es marginal. Un Portfolio Manager que no entiende la mecánica de transmisión del crédito soberano al sistema bancario está tomando riesgo que no puede ver. Un Head Trader que no puede leer el skew de volatilidad como termómetro del miedo institucional reacciona tarde. Un Director de Inversiones en un fondo de pensiones o aseguradora que no integra el macro-credit nexus en su asignación está optimizando dentro de un modelo incompleto.</p>
+      <p class="bg-te-cream p-5 border-l-4 border-te-copper rounded-r-md font-medium text-te-ink">Trading Economy fue diseñado para eliminar este déficit estructural. Enseña la capacidad de mover capital con la velocidad de un desk y la profundidad de un Chief Economist. <span class="italic text-te-copper">&ldquo;Where knowledge meets the trading floor.&rdquo;</span></p>
+    </div>
+  </section>
+
+  <!-- ====== OBJETIVO / CINCO CAPACIDADES ====== -->
+  <section id="objetivo" class="mb-20">
+    <div class="rounded-2xl p-10 md:p-12 shadow-2xl relative overflow-hidden border border-te-copper/40 text-te-cream" style="background:linear-gradient(140deg,#2a1e12,#140d06);">
+      <div class="absolute top-0 right-0 -mt-6 -mr-2 text-te-copper opacity-15 text-9xl font-serif select-none">&ldquo;</div>
+      <h2 class="text-sm font-bold text-te-amber uppercase tracking-widest mb-4">El profesional que egresa</h2>
+      <p class="text-2xl md:text-3xl font-serif leading-snug mb-8">Cinco capacidades que <span class="text-te-amber">ningún otro programa entrega juntas</span>.</p>
+      <ol class="grid md:grid-cols-2 gap-5 text-te-sand text-[15px] leading-relaxed">
+        <li class="flex gap-4"><span class="font-serif text-te-amber text-2xl font-semibold">I</span><span><b class="text-te-cream">Reaccionar ante cualquier dato macro en menos de 30 segundos</b> y construir el trade cross-asset correcto.</span></li>
+        <li class="flex gap-4"><span class="font-serif text-te-amber text-2xl font-semibold">II</span><span>Diseñar <b class="text-te-cream">yield curve trades DV01-neutral</b> — steepeners, flatteners y butterflies — con horizonte y catalizador definido.</span></li>
+        <li class="flex gap-4"><span class="font-serif text-te-amber text-2xl font-semibold">III</span><span>Leer la <b class="text-te-cream">superficie de volatilidad</b> como sistema de señales institucionales adelantadas.</span></li>
+        <li class="flex gap-4"><span class="font-serif text-te-amber text-2xl font-semibold">IV</span><span>Gestionar <b class="text-te-cream">riesgo crediticio macro</b> y proteger portafolios ante choques soberanos.</span></li>
+        <li class="flex gap-4 md:col-span-2"><span class="font-serif text-te-amber text-2xl font-semibold">V</span><span>Sintetizar y defender una tesis en cinco slides ante un <b class="text-te-cream">Investment Committee bajo presión real</b>.</span></li>
+      </ol>
+      <p class="mt-8 text-te-tan text-sm tracking-widest uppercase">Real markets. Real decisions. One arena.</p>
+    </div>
+  </section>
+
+  <!-- ====== POR QUÉ AHORA: LAS CINCO FUERZAS + CHART ====== -->
+  <section id="contexto" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">Contexto Macroeconómico Global 2026</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-6 border-l-4 border-te-copper pl-4 leading-tight">Por qué ahora: cada módulo está calibrado sobre el entorno real de México y los mercados globales en 2026.</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+        <p class="font-serif text-2xl text-te-copper font-semibold">$15–20&nbsp;mil&nbsp;M</p>
+        <p class="text-xs uppercase tracking-wide text-te-bronze mt-1 mb-2">USD por cada 100 pb de compresión</p>
+        <p class="text-sm text-te-umber leading-snug"><b>Divergencia Fed–Banxico.</b> El diferencial de tasas se ha comprimido de 600 a 400 puntos base; cada 100 pb mueven flujo de portafolio hacia o desde México.</p>
+      </div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+        <p class="font-serif text-2xl text-te-copper font-semibold">10–25%</p>
+        <p class="text-xs uppercase tracking-wide text-te-bronze mt-1 mb-2">Aranceles · PIB −1.5 a −2.0% · FX 8–12%</p>
+        <p class="text-sm text-te-umber leading-snug"><b>Revisión del USMCA 2026.</b> La cláusula sunset abre un escenario de renegociación con riesgos arancelarios y ajuste cambiario.</p>
+      </div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+        <p class="font-serif text-2xl text-te-copper font-semibold">450&nbsp;pb</p>
+        <p class="text-xs uppercase tracking-wide text-te-bronze mt-1 mb-2">CDS · deuda &gt; $100 mil M USD</p>
+        <p class="text-sm text-te-umber leading-snug"><b>PEMEX: riesgo sistémico cuasi-soberano.</b> Calificación sub-investment grade: el caso de crédito más relevante para México.</p>
+      </div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+        <p class="font-serif text-2xl text-te-copper font-semibold">$45&nbsp;mil&nbsp;M</p>
+        <p class="text-xs uppercase tracking-wide text-te-bronze mt-1 mb-2">IED 2026E · 97% ocupación</p>
+        <p class="text-sm text-te-umber leading-snug"><b>Nearshoring: el trade estructural de la década.</b> La IED superó $36,000 M en 2024 y los parques industriales operan al 97%.</p>
+      </div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+        <p class="font-serif text-2xl text-te-copper font-semibold">~3%</p>
+        <p class="text-xs uppercase tracking-wide text-te-bronze mt-1 mb-2">Core inflation · el trilema</p>
+        <p class="text-sm text-te-umber leading-snug"><b>Inflación subyacente persistente.</b> El trilema sin precedentes para los bancos centrales: cortar, mantener o subir.</p>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="macroChart"></canvas>
+    </div>
+    <p class="text-xs text-te-bronze text-center mt-3">Anclas citadas en el programa: diferencial Fed–Banxico comprimido de 600 a 400 pb; IED por nearshoring de $36 mil M (2024) a $45 mil M (2026E). Puntos intermedios: estimación ilustrativa.</p>
+  </section>
+
+  <!-- ====== DIEZ RAZONES / MATRIZ DE IMPACTO ====== -->
+  <section id="razones" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">Por qué es único en el mundo</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-8 border-l-4 border-te-copper pl-4 leading-tight">Diez razones por las que este programa no existe en ningún otro lugar.</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">01</p><h4 class="font-bold text-te-ink text-sm mb-1.5">La intersección, no las partes</h4><p class="text-xs text-te-umber leading-relaxed">Une la profundidad analítica de un Chief Economist con la velocidad de ejecución de un desk institucional.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">02</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Un arsenal operativo propio</h4><p class="text-xs text-te-umber leading-relaxed">Herramientas calibradas con datos reales de mercado, construidas desde cero. Un arsenal analítico permanente.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">03</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Money Markets &amp; Yield Curve</h4><p class="text-xs text-te-umber leading-relaxed">El 80% del edge institucional en renta fija se genera aquí. Ningún otro programa lo cubre así.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">04</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Crédito &amp; Derivados de Crédito</h4><p class="text-xs text-te-umber leading-relaxed">CDS, CDX, CLOs y el caso PEMEX como cuasi-soberano sistémico — el más relevante para México.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">05</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Practical Speculation</h4><p class="text-xs text-te-umber leading-relaxed">Position sizing Kelly-adjusted, inspirado en Niederhoffer &amp; Kenner: análisis convertido en tamaño de posición.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">06</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Simulación de $50,000&nbsp;M</h4><p class="text-xs text-te-umber leading-relaxed">Choques de mercado en tiempo real, rotación de roles y panel de jueces profesionales de la industria.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">07</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Contexto México 2026 integrado</h4><p class="text-xs text-te-umber leading-relaxed">PEMEX, nearshoring, revisión USMCA, divergencia Fed–Banxico e inflación subyacente persistente.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">08</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Cinco Investment Memos</h4><p class="text-xs text-te-umber leading-relaxed">Evaluados por profesionales: del parsing del statement de la Fed al PEMEX Credit Protection Playbook.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">09</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Volatilidad como señal operativa</h4><p class="text-xs text-te-umber leading-relaxed">Regímenes del VIX, skew, term structure y variance risk premium — la lectura que separa al profesional.</p></div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-5 hover:shadow-md transition"><p class="font-serif text-te-copper text-xl font-semibold mb-1">10</p><h4 class="font-bold text-te-ink text-sm mb-1.5">Reacción en menos de 30 segundos</h4><p class="text-xs text-te-umber leading-relaxed">Construir el trade cross-asset y defenderlo ante el Investment Committee con datos, no con opiniones.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== AUDIENCIA ====== -->
+  <section id="audiencia" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">Audiencia objetivo</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-8 border-l-4 border-te-copper pl-4 leading-tight">Diseñado para quienes toman —o influyen— las decisiones de capital.</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Chief Economists</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">CIOs &amp; Portfolio Managers</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Heads of Trading &amp; Research</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Investment Committee Members</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Fund Managers</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Directores de AFOREs</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Aseguradoras</p></div>
+      <div class="bg-te-cream border border-te-sand/70 rounded-xl p-5 text-center hover:shadow-md transition"><p class="font-serif font-semibold text-te-ink">Family Offices</p></div>
+    </div>
+    <p class="text-sm text-te-bronze mt-5"><b class="text-te-umber">Prerrequisito (deseable):</b> formación económico-administrativa y/o financiera, bases sólidas de matemáticas financieras y, de preferencia, experiencia en instituciones del medio financiero.</p>
+  </section>
+
+  <!-- ====== FICHA TÉCNICA + EVALUACIÓN ====== -->
+  <section id="ficha" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">Ficha técnica del programa</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-8 border-l-4 border-te-copper pl-4 leading-tight">Datos, metodología y evaluación.</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white border border-te-sand/60 rounded-xl p-7 shadow-sm">
+        <dl class="divide-y divide-te-cream text-sm">
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Duración total</dt><dd class="text-te-ink font-semibold text-right">180 horas</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Sesiones</dt><dd class="text-te-ink font-semibold text-right">72 sesiones · 2.5 horas cada una</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Módulos</dt><dd class="text-te-ink font-semibold text-right">13 módulos temáticos</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Inicio</dt><dd class="text-te-ink font-semibold text-right">10 de agosto de 2026</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Modalidad</dt><dd class="text-te-ink font-semibold text-right">Online en vivo · 7:00–9:00 p.m. CDMX<br><span class="text-te-bronze font-medium">(sesiones sincrónicas)</span></dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Entregables</dt><dd class="text-te-ink font-semibold text-right">5 Investment Memos institucionales + Capstone + arsenal de herramientas operativas</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Certificación</dt><dd class="text-te-ink font-semibold text-right">≥ 70% Aprobado · ≥ 90% <span class="text-te-copper">Cum Laude</span></dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Idioma</dt><dd class="text-te-ink font-semibold text-right">Español con terminología técnica en inglés</dd></div>
+          <div class="py-3 flex justify-between gap-6"><dt class="uppercase tracking-wider text-xs text-te-bronze font-bold pt-0.5">Estructura de sesión</dt><dd class="text-te-ink font-semibold text-right">Contenido técnico + casos con datos reales + discusión y peer review</dd></div>
+        </dl>
+      </div>
+      <div class="bg-white border border-te-sand/60 rounded-xl p-7 shadow-sm">
+        <h4 class="font-serif text-xl text-te-ink font-semibold mb-5">Metodología y evaluación</h4>
+        <div class="space-y-4">
+          <div><div class="flex justify-between text-sm mb-1"><span class="font-semibold text-te-ink">Herramientas operativas</span><span class="text-te-copper font-bold">25%</span></div><div class="h-2 bg-te-cream rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:25%;background:linear-gradient(90deg,#d08a4a,#a8501f);"></div></div><p class="text-xs text-te-bronze mt-1">Precisión técnica y aplicabilidad de las herramientas construidas en el programa.</p></div>
+          <div><div class="flex justify-between text-sm mb-1"><span class="font-semibold text-te-ink">Investment Memos</span><span class="text-te-copper font-bold">20%</span></div><div class="h-2 bg-te-cream rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:20%;background:linear-gradient(90deg,#d08a4a,#a8501f);"></div></div><p class="text-xs text-te-bronze mt-1">Cinco memos institucionales en formato ejecutivo evaluados por profesionales.</p></div>
+          <div><div class="flex justify-between text-sm mb-1"><span class="font-semibold text-te-ink">Presentación ante Comité de Inversión</span><span class="text-te-copper font-bold">20%</span></div><div class="h-2 bg-te-cream rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:20%;background:linear-gradient(90deg,#d08a4a,#a8501f);"></div></div><p class="text-xs text-te-bronze mt-1">Defensa de tesis en simulación de IC con panel evaluador.</p></div>
+          <div><div class="flex justify-between text-sm mb-1"><span class="font-semibold text-te-ink">Capstone · Simulación institucional</span><span class="text-te-copper font-bold">20%</span></div><div class="h-2 bg-te-cream rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:20%;background:linear-gradient(90deg,#d08a4a,#a8501f);"></div></div><p class="text-xs text-te-bronze mt-1">Desempeño integral en simulación con $50B AUM bajo choques de mercado.</p></div>
+          <div><div class="flex justify-between text-sm mb-1"><span class="font-semibold text-te-ink">Participación activa</span><span class="text-te-copper font-bold">15%</span></div><div class="h-2 bg-te-cream rounded-full overflow-hidden"><div class="h-full rounded-full" style="width:15%;background:linear-gradient(90deg,#d08a4a,#a8501f);"></div></div><p class="text-xs text-te-bronze mt-1">Calidad del análisis en discusiones y ejercicios en sesión.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CURRICULUM ACORDEÓN ====== -->
+  <section id="curriculum" class="mb-20">
+    <h2 class="text-sm font-bold text-te-copper uppercase tracking-widest mb-2">El currículum · 13 módulos · 180 horas</h2>
+    <h3 class="text-3xl md:text-4xl font-serif text-te-ink font-semibold mb-3 border-l-4 border-te-copper pl-4 leading-tight">Prove it. Trece módulos que convierten el análisis macroeconómico en decisiones defendibles ante cualquier comité.</h3>
+    <p class="text-te-umber mb-8 max-w-3xl">Cada módulo integra objetivo, contenidos, entregable y las herramientas operativas que construyes — calibradas con datos reales de mercado.</p>
+
+    <div class="border-t border-te-sand/70">
+
+      <details class="mod border-b border-te-sand/70" open>
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 01 — De la teoría económica a la intuición de mercado</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">7.5 horas · 3 sesiones — Donde el economista deja de explicar el mercado y empieza a anticiparlo.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">Punto de partida epistemológico: por qué los economistas mejor formados frecuentemente fallan al operar mercados, y por qué los mejores traders subestiman el impacto estructural de los fundamentos. El participante construye el puente entre el modelo académico y la decisión de inversión.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Escuelas económicas y su traducción operativa al mercado: de Keynes y Friedman a la economía de mercados financieros.</li><li>Sesgos cognitivos en la decisión de inversión: anclaje, confirmación, exceso de confianza y aversión a la pérdida.</li><li>Marco academia vs. desk: cómo los mismos datos generan narrativas distintas en un modelo econométrico y en una pantalla de trading.</li><li>Del dato sorpresa al Investment Memo: el proceso de cinco pasos para convertir información en decisión.</li></ul></div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 02 — Indicadores macroeconómicos y políticas económicas</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — Cada dato del calendario es una orden de compra o de venta esperando ser leída.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">La arquitectura completa del calendario económico: no como lista de fechas, sino como mapa de causalidades que conecta datos con movimientos de activos. El módulo central del programa en términos de operatividad inmediata.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Taxonomía de indicadores: leading (ISM, PMI, curva), coincidentes (GDP, empleo) y lagging (CPI, mora).</li><li>Mercado laboral: anatomía del NFP — headline, U3, U6, participación, wages. Seis escenarios de reacción cross-asset.</li><li>Inflación: CPI, PCE, Core vs. Headline, breakevens y transmisión a tipo de cambio y bonos soberanos.</li><li>Actividad económica: GDP (advance, preliminary, final), ISM Manufacturing y Services, PMIs globales.</li><li>Política monetaria: parsing palabra a palabra del statement de la Fed, dot plot, conferencia. Banxico: comunicado, votación split, minutas.</li><li>Política fiscal y geopolítica: déficit, deuda/PIB y su impacto en spreads soberanos y tipo de cambio.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Macro Surprise Map completa + Investment Memo: &ldquo;La Fed sube 25 pb sin cambiar el Dot Plot&rdquo;.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Macro Surprise Impact Map con Z-scores históricos.</li><li>NFP Playbook: 6 escenarios cuantificados en tasas, FX, equity, commodities.</li><li>Fed Statement Parser: checklist de 25 puntos en tiempo real.</li><li>Banxico Reaction Map: 4 escenarios vs. Bonos M y MXN.</li><li>Fiscal Stress Indicator con triggers de mercado.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 03 — Choques estructurales y macrotendencias globales</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — El alpha estructural se decide en décadas, no en sorpresas mensuales.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El análisis macroeconómico de alto valor no está en el dato mensual, sino en las tendencias estructurales que reconfiguran el mapa de riesgo y oportunidad durante décadas.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Desglobalización y reconfiguración de cadenas de suministro: ganadores y perdedores por sector y geografía.</li><li>Nearshoring en México: $36B IED 2024, proyección $45B 2026, ocupación de parques 97%+ y cuellos de botella.</li><li>Transición energética: litio, cobre, tierras raras, stranded assets de PEMEX e integración ESG.</li><li>Demografía y pensiones: bono demográfico México 2025–2035, proyecciones AFORE, sostenibilidad actuarial.</li><li>Inteligencia artificial y quantum computing: impacto en productividad financiera y nuevos riesgos operativos.</li><li>Geopolítica aplicada a portafolios: Taiwan Strait Risk, expansión BRICS, riesgo institucional México.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Nearshoring Investment Thesis + USMCA Stress Test + ajuste de asignación de portafolio ante choque geopolítico.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Nearshoring Investment Thesis: sectores, geografías, instrumentos, timing.</li><li>USMCA Stress Test: escenarios arancelarios en MXN, IPC, Bonos M.</li><li>Energy Transition Portfolio Map: winners vs. stranded assets con ESG.</li><li>Geopolitical Risk Heatmap: 10 riesgos, probabilidad e impacto por activo.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 04 — Arquitectura financiera global y política monetaria moderna</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">12.5 horas · 5 sesiones — El balance de los bancos centrales mueve más capital que cualquier reporte trimestral.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El balance sheet de los bancos centrales como el factor macroeconómico más determinante de los últimos 15 años y la clave para entender el régimen de liquidez en el que operamos.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Balances de los principales bancos centrales: Fed ($7.5T), ECB ($7.8T), BOJ ($5.2T), PBOC ($5.8T), Banxico.</li><li>QE y QT: canales de transmisión, efectos en primas de plazo, curva de rendimientos y apetito por riesgo.</li><li>Repo markets: mecánica, participantes, el blow-up de septiembre 2019 y sus lecciones de liquidez.</li><li>CBDCs y stablecoins: arquitectura técnica, implicaciones para la transmisión monetaria y los pagos.</li><li>Divergencia monetaria global 2026: Fed vs. ECB vs. BOJ vs. PBOC vs. mercados emergentes.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Central Bank Tracker Dashboard + análisis de régimen de liquidez para posicionamiento táctico.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Balance Sheet Dashboard G4 + México: $25T+ bajo seguimiento.</li><li>QT Impact Map: efectos cuantificados por activo y geografía.</li><li>Repo Market Stress Indicators: señales tempranas de crisis.</li><li>CBDC Readiness Map: 15 países, estado de implementación.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 05 — Money markets, liquidez y renta fija soberana</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — La curva soberana es el lenguaje en el que el mercado piensa en voz alta.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El módulo más técnico del programa y el que genera mayor ventaja competitiva: pocos profesionales dominan la mecánica completa de money markets y yield curve trading. Aquí está el 80% del edge institucional en renta fija.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Estructura de los money markets: SOFR, TIIE, Cetes, papel comercial, repos, mecánica y señales de estrés.</li><li>Bootstrapping de la curva de rendimientos: de instrumentos on-the-run a curva spot y forward.</li><li>La curva como predictor macroeconómico: spread 2s10s y su récord de señales de recesión.</li><li>Duration, convexidad y DV01: cálculo e interpretación a nivel posición y portafolio.</li><li>Yield curve trading avanzado: steepeners (2s10s, 5s30s), flatteners, butterfly DV01-neutral y atribución de P&amp;L.</li><li>Instrumentos soberanos mexicanos: Bonos M, Cetes, Udibonos, mercado primario y secundario, curva histórica.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Yield Curve Bootstrapping completo + Butterfly Trade con análisis de carry/roll-down + Investment Memo: &ldquo;La Curva como Brújula Macro&rdquo;.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Yield Curve Bootstrapping: modelo con datos reales de Banxico.</li><li>Butterfly Trade Template: DV01-neutral con P&amp;L attribution.</li><li>Duration/Convexity Dashboard: riesgo de tasas a nivel portafolio.</li><li>Curva Soberana México: 3 años de historia, percentiles y régimen.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 06 — Volatilidad como indicador adelantado</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — El miedo se cotiza antes que el precio. Aprende a leerlo primero.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">La volatilidad es el precio del miedo institucional. Quien sabe leerla correctamente opera con información que la mayoría del mercado no procesa. Este módulo convierte la superficie de volatilidad en un sistema de señales operativas.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>El VIX: construcción metodológica, interpretación y límites. No es el índice del miedo; es el precio de la incertidumbre institucional.</li><li>Los cinco regímenes de volatilidad: Complacencia (9–12), Calma (12–16), Elevado (16–22), Pánico (22–35), Crisis (35–80+).</li><li>Term structure de volatilidad: contango y backwardation como indicadores adelantados.</li><li>Skew y volatility smile: asimetría de protección institucional, puts vs. calls y señales direccionales.</li><li>Implícita vs. realizada: variance risk premium como factor de retorno y señal de dealers.</li><li>Transmisión cross-asset: VIX–credit spread, FX volatility, MOVE Index — el mapa de contagio.</li><li>Estrategias institucionales con opciones: calendar spreads, ratio spreads, collars y volatility overlays.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">VIX Regime Dashboard operacional + Calendar Spread Trade Template + Vol Overlay Memo para portafolio institucional.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>VIX Regime Dashboard: clasificación en tiempo real con señales.</li><li>Volatility Term Structure Tracker: contango/backwardation.</li><li>Skew Monitor: asimetría de protección institucional.</li><li>Cross-Asset Vol Transmission Map: correlaciones y leads/lags.</li><li>Calendar Spread Payoff Template.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 07 — Practical Speculation · Tactical Execution</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — Entre la tesis y la ejecución está la diferencia entre tener razón y ganar dinero.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">Inspirado en la filosofía de Niederhoffer &amp; Kenner: la especulación táctica de alta calidad no es gambling, es el ejercicio de un edge estadístico cuantificable y disciplinado. Convierte el análisis macroeconómico en decisiones de tamaño de posición.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Filosofía de Niederhoffer: edge estadístico, ciclos de mercado, counting y la diferencia entre especulación y apuesta.</li><li>Yield curve trading avanzado: carry + roll-down cuantificado, ride-the-curve, box trades y arbitraje de curva.</li><li>Relative value institucional: pairs trading en renta fija, on-the-run vs. off-the-run, CDS-bond basis.</li><li>Carry trades globales: selección de pares, carry/vol ratio, escenarios de unwind y hedging.</li><li>Basis trading: cash-futures en Bonos M y Treasuries, cross-currency basis, ETF NAV arbitrage.</li><li>Position sizing disciplinado: Kelly criterion adaptado, VaR paramétrico e histórico, correlaciones.</li><li>Simulación de día de desk: apertura de posiciones, gestión intraday, cierre y attribution report.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Portafolio de 5 trades simultáneos con Risk Report completo, attribution analysis y presentación ante el Head of Desk.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>5-Trade Portfolio Builder: correlación, riesgo y P&amp;L esperado.</li><li>Kelly Position Sizing Calculator institucional.</li><li>Carry/Vol Ratio Screener: ranking de oportunidades globales.</li><li>Basis Trade Monitor: cash-futures y cross-currency.</li><li>Desk P&amp;L Report: template institucional diario.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 08 — Del indicador al mercado · FX, bonos, acciones y derivados</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — Un mismo dato, cinco mercados, una sola decisión coherente.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El módulo más operativo: cómo reacciona cada activo ante cada dato macroeconómico, en qué secuencia temporal y con qué magnitud histórica. Se construye el playbook institucional que diferencia a los gestores profesionales.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Mecánica de reacción en los primeros 30 segundos: T-0 dato, T+5s algoritmos, T+30s fast money, T+5min real money.</li><li>NFP Playbook completo: 6 escenarios con impacto cuantificado.</li><li>CPI/PCE Playbook: descomposición por componentes e impacto sobre la curva y el dólar.</li><li>Fed Playbook: parsing del statement en tiempo real, dot plot, tres etapas de la conferencia.</li><li>Banxico Playbook: comunicado, votación split, minutas y posicionamiento en Bonos M y MXN.</li><li>Cross-market flow cascade: Treasuries → Bonos M → MXN → IPC → FIBRAs.</li><li>Positioning analysis: CFTC COT data, positioning relativo vs. histórico y mean reversion.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">The Trade Room — simulación estilo mesa institucional con cuatro mesas simultáneas (Rates, FX, Equities, Credit) y P&amp;L semanal consolidado.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Macro Reaction Playbook Master: respuesta cuantificada por activo.</li><li>Cross-Asset Flow Cascade Map: transmisión EE.UU. → México.</li><li>CFTC COT Positioning Dashboard.</li><li>NFP Scenario Map: 6 escenarios × 8 activos = 48 respuestas.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 09 — Commodities y activos reales · Coberturas e inflación</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">12.5 horas · 5 sesiones — Lo que se extrae de la tierra fija el precio de todo lo demás.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">Los commodities como clase de activo y como termómetro macroeconómico: el mercado del petróleo contiene más información sobre el ciclo económico global que la mayoría de los indicadores oficiales.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Forward curves de commodities: contango vs. backwardation, roll yield, convenience yield.</li><li>Mercado del petróleo: spread WTI–Brent, dinámica OPEC+, impacto en PEMEX y la cobertura fiscal mexicana.</li><li>Oro y metales preciosos: tasas reales, dólar, demanda de bancos centrales y correlaciones históricas.</li><li>Dr. Copper y metales industriales: litio, cobre, tierras raras como indicadores adelantados del ciclo.</li><li>Activos reales como cobertura inflacionaria: FIBRAs, Udibonos y CKDs de infraestructura.</li><li>Choques climáticos y ESG: carbon pricing EU ETS, CBAM e impacto en commodities y emisores.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Inflation Hedge Portfolio completo + Forward Curve Analysis de petróleo y cobre + AFORE Commodities Overlay Proposal.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Forward Curve Analysis Template: contango/backwardation con señales.</li><li>Oil Market Dashboard: WTI, Brent, inventarios, rig count, OPEC+.</li><li>Inflation Hedge Scorecard: ranking por efectividad empírica.</li><li>FIBRA Analysis Template: NOI, LTV, ocupación, FFO y comparativo sectorial.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 10 — Macroeconomía aplicada a crédito y derivados de crédito</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — El spread soberano es el termómetro del riesgo país. Aquí aprendes a tomarlo.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El módulo más sofisticado del programa: cuando PEMEX está al borde de una crisis de crédito, todos los gestores de fondos en México necesitan entender CDS, transmisión soberano-bancario y estrategias de protección. Responde directamente al entorno mexicano 2026.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Macro-credit nexus: el credit impulse como indicador adelantado del ciclo económico.</li><li>CDS: mecánica completa, pricing (hazard rates, survival probabilities, credit triangle), convenciones ISDA y liquidación.</li><li>PEMEX como caso cuasi-soberano: CDS 450+ pb, default implícito, transmisión a soberano, banca y peso.</li><li>CDX e iTraxx: índices vs. single-name, dispersión trading y posicionamiento en ciclo crediticio.</li><li>High yield, leveraged loans y CLOs: waterfall, O/C tests, señales de estrés y exposición bancaria mexicana.</li><li>Riesgo de contraparte: CVA y DVA en la práctica, wrong-way risk, rol de las CCPs post-Dodd Frank.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">PEMEX Credit Protection Playbook completo: análisis CDS, escenarios de transmisión soberana y estrategia de hedging.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>CDS Pricing Model: hazard rates, survival curve y fair value.</li><li>PEMEX Credit Transmission Map: CDS → Soberano → Bancario → MXN.</li><li>Credit Cycle Indicator: IG vs. HY según fase del ciclo.</li><li>CVA/DVA Calculator: riesgo de contraparte cuantificado.</li><li>CLO Stress Test: O/C triggers y default por tranche.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 11 — Capital privado, venture capital, private debt y activos digitales</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">12.5 horas · 5 sesiones — Donde el capital paciente convierte la macro en retorno de doble dígito.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El mercado de capitales privados supera los $10 billones de dólares globalmente y representa la frontera de expansión más relevante para AFOREs, aseguradoras y family offices mexicanos.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Private Equity: $10T global, $2.5T dry powder, J-curve, métricas (MOIC, DPI, TVPI, IRR), economics GP/LP (2/20).</li><li>CKDs y CERPIs en México: $25B+ MXN AUM, marco CNBV/CONSAR, desempeño vs. PE global.</li><li>Venture Capital: power law de retornos, down rounds, ecosistema LatAm (Nubank, Kavak, Clip).</li><li>Private Debt: $1.7T AUM global, direct lending, BDCs, CLOs, mezzanine, estructuración y riesgo.</li><li>Activos digitales: ETFs de BTC +$100B AUM, correlaciones macro, stablecoins $200B+, tokenización RWA.</li><li>Portafolios multiactivo con privados: liquidity waterfall, J-curve management, commitment pacing y reporting a LPs.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Strategic LP Allocation Memo: propuesta de asignación a mercados privados para un fondo institucional.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>PE Waterfall Calculator: distribuciones por estructura de economics.</li><li>CKD vs. PE Global Scorecard: rendimiento ajustado por riesgo.</li><li>J-Curve Management Template: pacing de llamadas y cash flows.</li><li>Crypto Correlation Map: BTC, ETH vs. S&amp;P, oro, bonos.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 12 — Inteligencia de mercado integrada y estrategia multiactivo</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — Trece módulos convergen en una sola mesa de decisión.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">La síntesis del programa: integrar análisis macroeconómico, señales de mercado, riesgo de crédito y dinámica de activos privados en un proceso de inversión institucional coherente que pueda defenderse ante cualquier comité.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Contenidos</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li>Análisis de escenarios institucional: cinco escenarios 2026 con probabilidades implícitas de mercado.</li><li>Stress testing multidimensional: histórico (GFC 2008, taper tantrum 2013, COVID 2020, ciclo 2022) + hipotético + reverse stress.</li><li>Tactical asset allocation overlay: SAA vs. TAA, señales en cuatro pilares (macro, valuaciones, sentimiento, técnico).</li><li>Early Warning Dashboard: 10 indicadores compuestos que señalan cambio de régimen antes que el consenso.</li><li>Comunicación ante IC: formato de 5 slides, manejo de pushback y preguntas difíciles.</li><li>Portafolios multiactivo: risk parity, mean-variance, Black-Litterman, factor-based y liquidity waterfall.</li></ul></div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">5-Slide IC Deck completo + Allocation Memo + Stress Test 2026 + Early Warning Dashboard operacional.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>5-Scenario Dashboard 2026: probabilidades, impacto y asignación.</li><li>Stress Test Template: histórico + hipotético + reverse.</li><li>TAA Signal Framework: 4 pilares, 20 señales, ponderación dinámica.</li><li>Early Warning Dashboard: 10 indicadores compuestos con umbrales.</li><li>Black-Litterman Model: integración de visiones macro.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mod border-b border-te-sand/70">
+        <summary class="py-5 px-2 md:px-4 flex justify-between items-center hover:bg-te-cream/60 transition">
+          <div class="flex-1 pr-4">
+            <h4 class="font-serif font-semibold text-te-ink text-lg md:text-xl">Módulo 13 · Capstone — Simulación institucional y casos estratégicos</h4>
+            <span class="text-sm text-te-copper font-semibold tracking-wide mt-1 block">15 horas · 6 sesiones — Defiende tu portafolio ante un comité de inversión. Como en la arena real.</span>
+          </div>
+          <span class="plus text-te-copper text-3xl font-light">+</span>
+        </summary>
+        <div class="bg-te-cream/50 px-4 md:px-6 pb-6 pt-2 space-y-4">
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Objetivo de aprendizaje</h5><p class="text-sm text-te-umber leading-relaxed">El examen real del programa: una simulación de cinco días donde cada participante opera como parte de un equipo institucional con un portafolio de $50,000 millones de pesos, recibiendo choques de mercado en tiempo real ante un panel de jueces profesionales de la industria.</p></div>
+          <div><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">La simulación</h5><ul class="list-disc pl-5 text-sm text-te-umber space-y-1"><li><b>Choque 1 — Crisis PEMEX:</b> CDS supera 600 pb, MXN −5%, IPC −4%, FIBRAs −8%, Bonos M 10Y +50 pb, congelamiento del crédito.</li><li><b>Choque 2 — Fed hawkish + USMCA 25%:</b> USD/MXN rompe 20.00, VIX a 28, salida de flujos de emergentes.</li><li><b>Fase de recuperación:</b> nearshoring sorpresivamente positivo, IED récord, Banxico mantiene tasas generando carry.</li><li><b>Presentación final:</b> defensa ante panel de jueces — gestores de fondos, chief risk officers y directores de AFOREs.</li></ul></div>
+          <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-2">Portafolio inicial · $50,000 M AUM</h5>
+            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">Bonos M 30%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">Internacional 20%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">IPC 15%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">Cetes 10%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">FIBRAs 10%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">Udibonos 5%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">CKDs 5%</span>
+              <span class="bg-te-cream border border-te-sand px-3 py-1.5 rounded-full text-te-ink">Cash 5%</span>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-te-ink text-te-cream p-4 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-amber mb-1.5">Entregable del módulo</h5><p class="text-sm leading-relaxed">Portfolio P&amp;L Report completo con attribution analysis + presentación al panel de jueces + Playbook Institucional personalizado.</p></div>
+            <div class="bg-white p-4 border border-te-sand/60 rounded-lg"><h5 class="text-xs font-bold uppercase text-te-copper mb-1.5">Herramientas que construyes</h5><ul class="list-disc pl-5 text-xs text-te-umber space-y-0.5"><li>Capstone Portfolio Tracker: P&amp;L en tiempo real por posición y asset class.</li><li>Scenario Shock Response Playbook: decisiones precomprometidas.</li><li>Attribution Analysis Template: Brinson-Hood-Beebower.</li><li>Final Presentation Template: 10 slides de defensa ante panel.</li></ul></div>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ====== CAPSTONE HIGHLIGHT ====== -->
+  <section id="capstone" class="mb-20">
+    <div class="rounded-2xl p-10 md:p-12 shadow-2xl border border-te-copper/40 text-te-cream relative overflow-hidden" style="background:linear-gradient(140deg,#3a2e1c,#140d06);">
+      <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background:radial-gradient(ellipse at 20% 100%, #d08a4a 0%, transparent 55%);"></div>
+      <div class="relative z-10 grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h2 class="text-sm font-bold text-te-amber uppercase tracking-widest mb-3">El examen real · Capstone</h2>
+          <p class="font-serif text-2xl md:text-3xl leading-snug mb-4">Cinco días operando un portafolio de <span class="text-te-amber">$50,000 millones</span> bajo choques de mercado en tiempo real.</p>
+          <p class="text-te-sand leading-relaxed">Crisis PEMEX con CDS arriba de 600 pb. Fed hawkish con USMCA al 25% y USD/MXN rompiendo 20.00. Rotación de roles, decisiones precomprometidas y defensa final ante un panel de jueces: gestores de fondos, chief risk officers y directores de AFOREs.</p>
+        </div>
+        <div class="text-center md:text-right">
+          <p class="font-serif text-6xl md:text-7xl font-semibold text-te-amber leading-none">72</p>
+          <p class="text-xs uppercase tracking-widest text-te-sand mt-2">sesiones en vivo te preparan<br>para esos cinco días</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== URGENCIA ====== -->
+  <section class="mb-20">
+    <div class="rounded-xl border-2 border-te-copper bg-te-cream px-8 py-7 flex flex-col md:flex-row items-center justify-between gap-5">
+      <div>
+        <p class="font-serif text-2xl text-te-ink font-semibold leading-snug">La arena abre el <span class="text-te-copper">10 de agosto de 2026</span>. Los cupos son limitados.</p>
+        <p class="text-sm text-te-bronze mt-1">Edición Ejecutiva No. 01 · Grupos reducidos con peer review y panel evaluador — el formato no admite sobrecupo.</p>
+      </div>
+      <a href="#rm-enroll" class="shrink-0 bg-gradient-to-br from-te-amber to-te-copper text-white font-bold px-8 py-4 rounded-full shadow-lg hover:-translate-y-0.5 transition">Asegurar mi lugar</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
+<section id="rm-enroll" style="background:linear-gradient(135deg,#3a2e1c,#140d06);color:#f6efe1;padding:64px 20px;font-family:'Inter',Arial,sans-serif;">
+  <div style="max-width:660px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="color:#d08a4a;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Fraunces',Georgia,serif;">Asegura tu lugar</h2>
+      <p style="color:#cbbea2;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
+    </div>
+    <div style="background:#fff;color:#241b10;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.35);">
+      <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:12px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="nombre" placeholder="Nombre" required style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+          <input name="apellido" placeholder="Apellido" style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+        </div>
+        <input type="email" name="email" placeholder="Email corporativo" required style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="puesto" placeholder="Puesto" style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+          <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+        </div>
+        <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #e0d5bd;border-radius:10px;font-size:15px;">
+        <button type="submit" style="background:linear-gradient(135deg,#d08a4a,#a8501f);color:#fff;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
+        <p style="font-size:12px;color:#8a7a5f;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
+      </form>
+      <div id="rm-verify" style="display:none;"></div>
+      <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
+      <div style="margin-top:24px;padding-top:22px;border-top:1px solid #f0e8d5;text-align:center;">
+        <div style="font-size:13px;color:#7d6e54;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
+        <div style="font-size:30px;font-weight:800;color:#241b10;margin:8px 0 4px;">MXN $<span>98,000</span> <span style="font-size:14px;color:#7d6e54;font-weight:500;">+ IVA</span></div>
+        <div style="display:grid;gap:10px;margin-top:16px;">
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#d08a4a;color:#241b10;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/5kQdR1cDJbP25stenv2Ry1g" target="_blank" rel="noopener" style="background:#241b10;color:#f6efe1;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+        </div>
+        <p style="font-size:11px;color:#a89a7d;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const RM_CFG={id:"tradingeconomy",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/trading-economy-2026.pdf",paypal:"",stripe:"https://buy.stripe.com/5kQdR1cDJbP25stenv2Ry1g"};
+const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
+const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+let RM_LEAD=null;
+(function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';})();
+async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando código...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.style.display="none";rmShowCode(phone);}else{b.textContent="Quiero el temario";b.disabled=false;alert("No pudimos enviar el código. Revisa tu número.");}return false;}
+function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#241b10;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #e0d5bd;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#d08a4a,#a8501f);color:#fff;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a7a5f;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4){m.textContent="Escribe el código completo.";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else{m.textContent="Código incorrecto o expirado. Intenta de nuevo.";}}
+</script>
+<!-- ===== /SALES MACHINE ===== -->
+
+<!-- ====== FOOTER ====== -->
+<footer class="bg-te-ink text-te-sand py-12 border-t border-te-copper/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="font-serif text-xl text-te-cream mb-2">RiskMathics Financial Institute</p>
+    <p class="text-xs uppercase tracking-[0.25em] text-te-tan mb-6">Est. 2005 · Learning from the greatest minds in the financial industry worldwide</p>
+    <p class="text-sm text-te-sand mb-1">Trading Economy · Chief Economist &amp; Market Intelligence Program · Inicio 10 de agosto de 2026</p>
+    <p class="text-xs text-te-bronze mt-4">www.riskmathics.com · executive@riskmathics.com · +52 (55) 5536 3597 · Ciudad de México</p>
+  </div>
+</footer>
+
+<!-- ====== CHART.JS: CONTEXTO 2026 ====== -->
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var ctx = document.getElementById('macroChart').getContext('2d');
+  new Chart(ctx, {
+    data: {
+      labels: ['2023','2024','2025E','2026E'],
+      datasets: [
+        {
+          type: 'bar',
+          label: 'IED por nearshoring en México (miles de M USD)',
+          data: [32, 36, 40.5, 45],
+          backgroundColor: 'rgba(168,80,31,0.75)',
+          borderColor: '#a8501f',
+          borderWidth: 1,
+          borderRadius: 6,
+          yAxisID: 'y'
+        },
+        {
+          type: 'line',
+          label: 'Diferencial de tasas Fed–Banxico (pb)',
+          data: [600, 525, 450, 400],
+          borderColor: '#241b10',
+          backgroundColor: 'rgba(36,27,16,0.08)',
+          borderWidth: 3,
+          pointBackgroundColor: '#d08a4a',
+          pointBorderColor: '#fff',
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          tension: 0.35,
+          yAxisID: 'y1'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'top', labels: { font: { family: 'Inter', size: 12 }, color: '#3a2e1c' } },
+        tooltip: {
+          backgroundColor: '#140d06',
+          titleFont: { family: 'Inter', size: 13 },
+          bodyFont: { family: 'Inter', size: 13, weight: 'bold' },
+          padding: 10
+        }
+      },
+      scales: {
+        y:  { position: 'left',  beginAtZero: true, grid: { color: 'rgba(58,46,28,0.07)' }, ticks: { font: { family: 'Inter' }, color: '#7d6e54', callback: function(v){ return '$' + v + ' B'; } }, title: { display: true, text: 'IED nearshoring (USD B)', color: '#a8501f', font: { family: 'Inter', size: 11, weight: 'bold' } } },
+        y1: { position: 'right', beginAtZero: false, grid: { drawOnChartArea: false }, ticks: { font: { family: 'Inter' }, color: '#7d6e54', callback: function(v){ return v + ' pb'; } }, title: { display: true, text: 'Diferencial Fed–Banxico (pb)', color: '#241b10', font: { family: 'Inter', size: 11, weight: 'bold' } } },
+        x:  { grid: { display: false }, ticks: { font: { family: 'Inter' }, color: '#3a2e1c' } }
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
